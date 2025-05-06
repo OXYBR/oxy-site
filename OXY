@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OXy - Autopeças e Soluções</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+    }
+    .produtos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .produto {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      flex: 1 1 calc(33.333% - 2rem);
+      box-sizing: border-box;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin-top: 1rem;
+    }
+    input, textarea {
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 0.7rem;
+      background: #222;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      background: #f4f4f4;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 768px) {
+      .produto {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>OXy</h1>
+    <p>Autopeças e Soluções Inteligentes</p>
+  </header>
+
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>A OXy é especializada em soluções para veículos leves, oferecendo peças de qualidade e atendimento personalizado. Trabalhamos com veículos até 2010 e garantimos procedência e eficiência.</p>
+  </section>
+
+  <section id="produtos">
+    <h2>Produtos</h2>
+    <div class="produtos">
+      <div class="produto">
+        <h3>Motor Gol G4</h3>
+        <p>Motor 1.0 completo, revisado e com garantia.</p>
+      </div>
+      <div class="produto">
+        <h3>Câmbio Celta</h3>
+        <p>Câmbio manual, excelente estado, pronto para uso.</p>
+      </div>
+      <div class="produto">
+        <h3>Farol Palio 2008</h3>
+        <p>Farol direito original, sem trincos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Entre em contato conosco preenchendo o formulário abaixo:</p>
+    <form>
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu email" required />
+      <textarea rows="5" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 OXy. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
